@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
-import {IndexPage, ProductPage} from './routes';
+import {IndexPage, ProductPage, ExamplePage} from './routes';
 
 
 function RouterConfig({ history }) {
@@ -9,6 +9,7 @@ function RouterConfig({ history }) {
       <Switch>
         <Route path="/" exact component={IndexPage} />
         <Route path="/products" exact component={ProductPage} />
+        <Route path="/example" exact component={ExamplePage} />
       </Switch>
     </Router>
   );
